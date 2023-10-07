@@ -1,0 +1,20 @@
+{
+  "name": "issue-type-is-included-in-js-output",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "ts-patch install -s",
+    "nuke": "del-cli dist node_modules",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "ts-patch": "^3.0.2",
+    "typescript": "^5.2.2",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "packageManager": "npm@9.8.1",
+  "engines": {
+    "npm": "^9.8.1"
+  }
+}
